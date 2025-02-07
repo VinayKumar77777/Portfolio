@@ -18,7 +18,7 @@
 :root{
     --bg-color: #fdfdfd;
     --text-color: black;
-    --main-color: #5a27ff;
+    --main-color: rgb(255, 119, 0);
     --white-color: #fdfdfd;
     --shadow-color: rgba(93, 95, 105, 0.433);
 }
