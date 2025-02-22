@@ -24,12 +24,12 @@
 }
 
 .self{
-    background: linear-gradient(200deg, rgb(255, 213, 63), rgb(146, 246, 255));
+/*     background: linear-gradient(200deg, rgb(255, 213, 63), rgb(146, 246, 255)); */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid red;
+/*     border: 1px solid red; */
     font-size: 18px;
     gap: 8px;
     margin-top: 3rem;
