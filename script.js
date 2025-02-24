@@ -95,7 +95,7 @@ function sliceText() {
     if (index < text.length) {
         textElement.textContent += text[index];
         index++;
-        setTimeout(sliceText, 600); 
+        setTimeout(sliceText, 350); 
     } else {
         setTimeout(() => {
             textElement.textContent = ""; 
