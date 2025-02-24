@@ -16,7 +16,7 @@
 }
 
 :root{
-    --bg-color:#393333;
+    --bg-color: #fdfdfd;
     --text-color: black;
     --main-color: #5a27ff;
     --white-color: #fdfdfd;
@@ -38,7 +38,7 @@
 
 
 .dark-mode {
-    --bg-color: #251c1c;
+    --bg-color:#1f2c31;
     --text-color: #fdfdfd;
     --shadow-color: rgba(0,0,0, .7);
     --border: 2px solid #5a27ff;
