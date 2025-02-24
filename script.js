@@ -78,7 +78,7 @@ ScrollReveal({
     delay:500,
 });
 
-ScrollReveal().reveal('.home-content, .heading', {origin: 'top'});
+ScrollReveal().reveal('.home-content, .heading, .self', {origin: 'top'});
 ScrollReveal().reveal('.home-img img, .services-container, .portfolio-box, .testimonial-wrapper, .contact form, .social-media a', {origin: 'bottom'});
 ScrollReveal().reveal('.home-content h1, .about-img img', {origin: 'left'});
 ScrollReveal().reveal('.home-content h4, .home-content p, .about-content', {origin: 'right'});
@@ -106,3 +106,38 @@ function sliceText() {
 }
 
 sliceText()
+
+
+
+// Message to Admin
+
+
+
+// Function to show a success message when form is submitted
+// Wait until the page loads completely
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the form element
+    let form = document.getElementById("contactForm");
+
+    // Check if form exists before adding event listener
+    if (form) {
+        form.addEventListener("submit", function (event) {
+            event.preventDefault(); // Stop page reload
+
+            // Display the SweetAlert success message
+            Swal.fire({
+                icon: "success",
+                title: "Message Sent!",
+                text: "Your message has been sent successfully.",
+                confirmButtonColor: "#3085d6",
+                confirmButtonText: "OK"
+            });
+
+            // Reset the form fields after submission
+            form.reset();
+        });
+    } else {
+        console.error("Form not found! Check your HTML for id='contactForm'.");
+    }
+});
+
